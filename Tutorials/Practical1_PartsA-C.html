@@ -1,0 +1,1382 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    color:#333;
+    background:#fff;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+.markdown-body .octicon-link:before {
+  font: normal normal normal 16px/1 octicons-link;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  content: '\f05c';
+  vertical-align: middle;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+</style><title>Practical1_PartsA-C</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-practical-1-de-novo-repeat-prediction-and-annotation-with-repeatmodeler2-and-repeatmasker" class="anchor" href="#practical-1-de-novo-repeat-prediction-and-annotation-with-repeatmodeler2-and-repeatmasker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practical 1: De-novo repeat prediction and annotation with RepeatModeler2 and RepeatMasker</h1>
+<p><em>Valentina Peona</em></p>
+<p><em><a href="mailto:valentina.peona@ebc.uu.se">valentina.peona@ebc.uu.se</a></em></p>
+<h2>
+<a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
+<p>Masking a genome of a new species using repeat libraries from other species can be insufficient. It is particularly important when the genome of interest contains species-specific repetitive elements never described before and these elements would remain largely unmasked or partially and/or incorrectly annotated. Furthermore, curated repeat libraries from sister species can actually reciprocally help the annotation of the two genomes (Boman et al. 2018).</p>
+<p>To get a more complete annotation we need to run a de-novo repeat annotation on our genome of interest to get a new repeat library made of raw consensus sequences. These raw consensus sequences are going to need a good round of manual curation and after that the library will be ready to annotate our genome of interest. At the end of our practicals we'll compare the genome annotation made with raw consensus sequences and with curated consensus sequences; the difference is going to be quite remarkable!</p>
+<p>There are a few tools available for the de-novo characterisation of repeats (e.g., CARP, REPET, RepeatExplorer2 and other all listed in <a href="https://tehub.org" rel="nofollow">https://tehub.org</a>) but for time reasons we will use only RepeatModeler2. As target genome, we chose to use the recently assembled genome of the tardigrade <em>Ramazzottius varieornatus</em> (abbreviated throughtout the practicals as "RV"; Yoshida et al. 2017). Once the RV repeat library is complete we will run RepeatMasker with the new library on the RV genome.</p>
+<p>In the previous edition of this course, your colleagues curated the repeat library of another tardigrade <em>Hypsibius dujardini</em> (abbreviated as "HD"; Yoshida et al. 2017) and this allows us to also compare the repeat libraries of two different species and gives us the opportunity to learn how to merge separate repeat libraries in an efficient and non-redundant way.</p>
+<h3>
+<a id="user-content-note" class="anchor" href="#note" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Note</h3>
+<p>Given the time we have for the course, all the commands have been already run so you can find all the outputs in the folder <code>~/Share/Output/</code>. We suggest you to follow the tutorial and try the commands out but full genome runs of RepeatModeler and RepeatMasker would take way too much time therefore kill the jobs once they started correctly.</p>
+<p>In this Practical we focus on:</p>
+<ol>
+<li>running RepeatModeler2 on RV genome</li>
+<li>inspecting the output of RepeatModeler2</li>
+<li>running RepeatMasker with the new library</li>
+<li>inspecting the output of RepeatMasker</li>
+</ol>
+<h3>
+<a id="user-content-funny-note" class="anchor" href="#funny-note" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Funny note</h3>
+<p>The genus Ramazzottius was not named after the Italian singer Eros Ramazzotti but after the Italian naturalist Giuseppe Ramazzotti. He was part of the family that produces the Amaro Ramazzotti liquors but decided to dedicate his life to science instead of to drinks and money ò.ò if and when you get a chance to drink this liquor, remember to cheer for our beloved tardigrades ^^/</p>
+<hr>
+<h1>
+<a id="user-content-part-a" class="anchor" href="#part-a" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part A</h1>
+<h2>
+<a id="user-content-practical-a1-install-repeatmodeler2-optional" class="anchor" href="#practical-a1-install-repeatmodeler2-optional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practical A.1: Install RepeatModeler2 (optional)</h2>
+<p>On the Amazon server RepeatModeler (Flynn et al. 2020) and RepeatMasker (Smit, Hubley, Green 2010) have been installed for you but here some instructions for installing it on your own server/computer.</p>
+<p><strong>Follow these instructions ONLY if you need to install RepeatModeler2 on your computer!</strong></p>
+<p>The new version of RepeatModeler has been released in 2020 and published in PNAS <a href="https://www.pnas.org/content/117/17/9451.short" rel="nofollow">https://www.pnas.org/content/117/17/9451.short</a> (Flynn et al. 2020) and can be downloaded from the GitHub page <a href="https://github.com/Dfam-consortium/RepeatModeler">https://github.com/Dfam-consortium/RepeatModeler</a></p>
+<p>There are several ways to install RepeatModeler2, for example through Conda or by directly downloading a Singularity image of the software which contains all the dependencies needed.</p>
+<p><strong>Conda installation</strong></p>
+<div class="highlight highlight-source-shell"><pre>conda create -n RepeatModeler2
+conda activate RepeatModeler2
+conda install -c bioconda repeatmodeler</pre></div>
+<p>Once the environment has been created correctly, you can run RepeatModeler2 just by calling it on the command line.</p>
+<p>There are several other tools you can install alongside RepeatModeler to run the LTRStruct option (to improve LTR prediction), please follow the instructions at <a href="https://github.com/Dfam-consortium/RepeatModeler">https://github.com/Dfam-consortium/RepeatModeler</a></p>
+<p><strong>Singularity installation</strong></p>
+<p>A Singularity and Docker image can be downloaded from <a href="https://github.com/Dfam-consortium/TETools">https://github.com/Dfam-consortium/TETools</a></p>
+<p>Example of how to install it and run</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c1">cd</span> /path/to/your/folder/
+curl -sSLO https://github.com/Dfam-consortium/TETools/raw/master/dfam-tetools.sh
+chmod +x dfam-tetools.sh
+./dfam-tetools.sh</pre></div>
+<p>Inside the container, the included tools are now available:</p>
+<div class="highlight highlight-source-shell"><pre>BuildDatabase -name genome1 genome1.fa
+RepeatModeler -database genome1 [-LTRStruct] [-pa 8]</pre></div>
+<p>If neither of these installation options work for you, please visit the Github pages: <a href="https://github.com/Dfam-consortium/RepeatModeler">https://github.com/Dfam-consortium/RepeatModeler</a> and <a href="https://github.com/Dfam-consortium/TETools">https://github.com/Dfam-consortium/TETools</a>.</p>
+<hr>
+<h2>
+<a id="user-content-practical-a2-getting-ready" class="anchor" href="#practical-a2-getting-ready" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practical A.2: Getting ready</h2>
+<p><strong>Important bash commands</strong></p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> change directory</span>
+<span class="pl-c1">cd</span>
+
+<span class="pl-c"><span class="pl-c">#</span> get the name of the folder in which you are located</span>
+<span class="pl-c1">pwd</span>
+
+<span class="pl-c"><span class="pl-c">#</span> list files in directory</span>
+ls
+ll
+
+<span class="pl-c"><span class="pl-c">#</span> visualise a file</span>
+less <span class="pl-k">&lt;</span>filename<span class="pl-k">&gt;</span>
+<span class="pl-c"><span class="pl-c">#</span> exit less by typing q</span>
+
+<span class="pl-c"><span class="pl-c">#</span> print the content of a file</span>
+cat <span class="pl-k">&lt;</span>filename<span class="pl-k">&gt;</span>
+
+<span class="pl-c"><span class="pl-c">#</span> print first lines of a file</span>
+head <span class="pl-k">&lt;</span>filename<span class="pl-k">&gt;</span>
+
+<span class="pl-c"><span class="pl-c">#</span> print last lines of a file</span>
+tail <span class="pl-k">&lt;</span>filename<span class="pl-k">&gt;</span>
+
+<span class="pl-c"><span class="pl-c">#</span> edit a file</span>
+nano <span class="pl-k">&lt;</span>filename<span class="pl-k">&gt;</span>
+
+<span class="pl-c"><span class="pl-c">#</span> create directory</span>
+mkdir <span class="pl-k">&lt;</span>dir_name<span class="pl-k">&gt;</span>
+
+<span class="pl-c"><span class="pl-c">#</span> copy file</span>
+cp /path/to/file/file.txt ./
+
+<span class="pl-c"><span class="pl-c">#</span> create symbolic link</span>
+ln -s /path/to/file/file.txt ./
+
+<span class="pl-c"><span class="pl-c">#</span> get help for how to run commands</span>
+man <span class="pl-k">&lt;</span>command<span class="pl-k">&gt;</span>
+
+<span class="pl-c"><span class="pl-c">#</span> if man does not work try with</span>
+<span class="pl-k">&lt;</span>command<span class="pl-k">&gt;</span> -h</pre></div>
+<p><strong>Create your working directory</strong></p>
+<p>We need to collect all the input files and scripts necessary for this course and copy them to your own folders:</p>
+<ol>
+<li>the <em>Ramazzottius varieornatus</em> genome <code>RV.fasta</code>
+</li>
+<li>the curated repeat library for <em>Hypsibius dujardini</em> <code>HD.lib</code>
+</li>
+<li>Perl script to rename the consensus sequences created by RepeatModeler2 <code>renameRMDLconsensi.pl</code>
+</li>
+<li>Perl script to recalculate the divergence from consensus <code>calcDivergenceFromAlign.pl</code>
+</li>
+<li>Perl script to create landscape plots <code>createRepeatLandscape.pl</code>
+</li>
+<li>Perl script to generate alignments to manually inspect <code>RMDL_curation_pipeline.pl</code>
+</li>
+<li>Some Perl and Python scripts to manipulate RepeatMasker output files <code>RM2Bed.py</code> <code>rmOutToGFF3.pl</code> <code>rmOut2Fasta.pl</code>
+</li>
+</ol>
+<p><strong>Note</strong> all the scripts (but <code>RMDL_curation_pipeline.pl</code> and <code>renameRMDLconsensi.pl</code>) are part of the RepeatMasker installation BUT here on this server it seems complicated to reach them, therefore we provided a local copy of them. They can be usually found in the folder <code>RepeatMasker/util/</code> on your own server/computer.</p>
+<p>All the files and scripts are given in the folder <code>Share</code> in your own home directory. Please create your working directory and copy the files from <code>Share</code>.</p>
+<p>Throughout the tutorial a folder system that looks like this will be used but you're free to use the system you prefer:</p>
+<pre><code>TEcourse (main working directory)
+        |_________Data # contains the original input files
+        |_________Intermediate # contains all the output files from the analysis
+        |_________Results # contains all the final outputs
+        |_________Code # contains code files and scripts
+</code></pre>
+<p>Create your own folders</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> create folders</span>
+mkdir -p TEcourse/Data TEcourse/Code TEcourse/Intermediate TEcourse/Results
+
+<span class="pl-c"><span class="pl-c">#</span> copy reference genome and repeat library in the Data folder</span>
+cp <span class="pl-k">~</span>/Share/Data/RV.fasta ./TEcourse/Data/
+cp <span class="pl-k">~</span>/Share/Data/HD.lib ./TEcourse/Data/
+
+<span class="pl-c"><span class="pl-c">#</span> copy scripts in the Code folder</span>
+cp <span class="pl-k">~</span>/Share/Code/<span class="pl-k">*</span> <span class="pl-k">~</span>/TEcourse/Code/</pre></div>
+<p>A copy of all the files can also be found on Dropbox in the folder AWS_server_files:
+<a href="https://www.dropbox.com/sh/xn6snum1853jf32/AAAdCyMctjz-HplGeb9I9tC1a?dl=0" rel="nofollow">https://www.dropbox.com/sh/xn6snum1853jf32/AAAdCyMctjz-HplGeb9I9tC1a?dl=0</a></p>
+<hr>
+<h2>
+<a id="user-content-practical-a3-run-repeatmodeler2" class="anchor" href="#practical-a3-run-repeatmodeler2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practical A.3: Run RepeatModeler2</h2>
+<p>On the Amazon server we installed RepeatModeler2 through conda and you should be able to run it by simply calling the command RepeatModeler from the command line.</p>
+<p>Once you have your files copied we can start giving a look at RepeatModeler2 and its help page:</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> create output folder for RepeatModeler in Intermediate</span>
+conda activate repeatmodeler
+
+<span class="pl-c1">cd</span> <span class="pl-k">~</span>/TEcourse/Intermediate
+mkdir RMDL
+<span class="pl-c1">cd</span> RMDL
+
+RepeatModeler -h</pre></div>
+<p>Inspect the options, do you see anything useful/interesting? Which options would you use? What does <code>LTRStruct</code> mean/do? (The installation of the dependencies for LTRStruct resulted to be quite hard on the Amazon server so we will not use it in the command below BUT it is much easier to install on your own computers!)</p>
+<h3>
+<a id="user-content-note-1" class="anchor" href="#note-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Note</h3>
+<p><strong>Please run the first command and start the second but then kill it and copy the output we produced for you in your folder.</strong></p>
+<p>Let's give it a try</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> symlink the genome file in your RMDL folder</span>
+ln -s ../../Data/RV.fasta <span class="pl-c1">.</span>
+
+<span class="pl-c"><span class="pl-c">#</span> STEP1: create a database for the genome</span>
+BuildDatabase -name RV RV.fasta
+
+<span class="pl-c"><span class="pl-c">#</span> STEP2: run RepeatModeler2 on the database you just created</span>
+RepeatModeler -database RV</pre></div>
+<p><strong>Kill the RepeatModeler command, we created the output files for you already</strong> kill command: <code>CTRL + C</code></p>
+<p>As you can see there are two commands to run to get the final output from the tool (the library of raw consensus sequences). The first command creates a database of your genome assembly fasta file, basically it indexes the fasta to better access it during the de-novo characterisation similarly to what BLAST. Indeed, most of the RepeatModeler analysis consists of a large number of alignments.</p>
+<p>After that the database has been correctly generated, the second command will start the true analysis.</p>
+<h3>
+<a id="user-content-note-2" class="anchor" href="#note-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Note</h3>
+<p>When you're going to run RepeatModeler and RepeatMasker on your fasta files, pay attention to the presence of strange/special characters in your fasta headers, they may cause problems during the analysis. Also it is suggested to have rather short fasta headers or they will be cut and you may lose some important pieces of information: this is of particular importance when running RepeatMasker.</p>
+<p><strong>Copy the output files in your own RMDL folder</strong></p>
+<div class="highlight highlight-source-shell"><pre>cp -r ../../../Share/Output/RMDL/<span class="pl-k">*</span> <span class="pl-c1">.</span></pre></div>
+<hr>
+<h2>
+<a id="user-content-practical-a4-inspect-the-repeatmodeler2-output" class="anchor" href="#practical-a4-inspect-the-repeatmodeler2-output" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practical A.4: Inspect the RepeatModeler2 output</h2>
+<p>The output is rather straightforward to understand. In the output folder we can find four key files: <code>consensi.fasta</code>, <code>consensi.fa.classified</code> and two Stockholm files for the two previous files.</p>
+<p>The <code>consensi.fasta</code> contains the raw consensus sequences named by RepeatModeler automatically.</p>
+<p>The second and more important file is the <code>classified</code> version of the consensus sequences. One of the processes of the RepeatModeler analysis tries to preliminarly classify the sequences by aligning the consensus sequences to a database of known transposable element related proteins. This step is important to get a first overview of the type of transposable elements found in the genome but it can produce artifacts especially when species never analysed before are concerned. Misclassification is unfortunately typical and that's one of the reasons why we need to curate these consensus sequences in the next days!!</p>
+<p>The last two files are Stockholm alignment files in which for each consensus sequence, seed alignments througout the genome are collected.</p>
+<p>Give yourself a look at the files now :)
+How many consensus sequences have been produced?
+Which kind of repetitive elements do you find in the library?
+Are the consensus sequences long, short?</p>
+<hr>
+<h1>
+<a id="user-content-part-b" class="anchor" href="#part-b" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part B</h1>
+<h2>
+<a id="user-content-practical-b1-install-repeatmasker-optional" class="anchor" href="#practical-b1-install-repeatmasker-optional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practical B.1: Install RepeatMasker (optional)</h2>
+<p><strong>Install RepeatMasker ONLY if you're working on your own server/computer</strong></p>
+<p>For RepeatMasker there are no Singularity images available but we can always rely on Conda</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> if you already have the RepeatModeler environment activated please deactivate it:</span>
+<span class="pl-c"><span class="pl-c">#</span> conda deactive RepeatModeler</span>
+conda create RepeatMasker
+conda activate RepeatMasker
+conda install -c bioconda repeatmasker</pre></div>
+<p>and we're ready to go!</p>
+<hr>
+<h2>
+<a id="user-content-practical-b2-compare-rv-and-hd-libraries-with-repeatmasker" class="anchor" href="#practical-b2-compare-rv-and-hd-libraries-with-repeatmasker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practical B.2: Compare RV and HD libraries with RepeatMasker</h2>
+<p>In this part of the tutorial we learn how to run RepeatMasker in groups of two or three people. <strong>Be sure you are in the right breakout room and know your group name.</strong></p>
+<p>Since running the entire new library on the genome assembly will take likely a couple of hours, we're going to run it using smaller files.
+We're going to mask the entire HD curated repeat library (reference) with a subset of the RV raw repeat library (query). In this way, in a little time, we discover if there is homology between the RV and HD repeats. <em>The results from Practical B.2 will be the basis for practicing library merging in Practical 1 part D.</em></p>
+<p>In the folder <code>Share/Output/RMDL/Groups</code>, you can find your subset of RV consensus sequences named after the number of your groups. Copy your file into your working directory.</p>
+<p><strong>Note: please use your own group number below!!</strong></p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> create RepeatMasker output folder in Intermediate</span>
+<span class="pl-c"><span class="pl-c">#</span> go to Intermediate</span>
+<span class="pl-c1">cd</span> <span class="pl-k">~</span>/TEcourse/Intermediate
+mkdir RMSK
+<span class="pl-c1">cd</span> RMSK
+
+<span class="pl-c"><span class="pl-c">#</span> example using group 1; change the GROUP variable according to your group name</span>
+<span class="pl-c"><span class="pl-c">#</span> group 2: g02; group 3: g03; group 10: g10 etc etc</span>
+GROUP=g01
+cp <span class="pl-k">~</span>/Share/Output/RMDL/Groups/RV_raw_consensi_<span class="pl-smi">${GROUP}</span>.fasta <span class="pl-c1">.</span>
+
+CODE=<span class="pl-k">~</span>/TEcourse/Code
+
+<span class="pl-c"><span class="pl-c">#</span> rename consensus sequences: replace the standard "rnd" suffix with a custom one</span>
+<span class="pl-c"><span class="pl-c">#</span> ramVar = Ramazzottius varieornatus</span>
+perl <span class="pl-smi">$CODE</span>/renameRMDLconsensi.pl RV_raw_consensi_<span class="pl-smi">${GROUP}</span>.fasta ramVar RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib
+
+<span class="pl-c"><span class="pl-c">#</span> link the curated repeat library for HD tardigrade HD.lib from Data</span>
+ln -s ../../Data/HD.lib <span class="pl-c1">.</span></pre></div>
+<p>Before running RepeatMasker, let's give a look at the different options.
+List the options by typing:</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> go back to the base conda env</span>
+conda deactivate
+conda activate RepeatMasker
+
+RepeatMasker
+<span class="pl-c"><span class="pl-c">#</span>or for having a more detailed help</span>
+RepeatMasker -help</pre></div>
+<p>Since the manual is quite long, you can temporarly save it in a file</p>
+<div class="highlight highlight-source-shell"><pre>RepeatMasker -help <span class="pl-k">&gt;</span> RMSK_man
+less RMSK_man</pre></div>
+<p>Some important options you should look at are</p>
+<pre><code> # number of cores to use
+ -pa(rallel) [number]
+
+ # options for the speed of the repeat annotation
+ -s 	slow *RECOMMENDED*
+ -q 	quick
+ -qq 	very quick
+
+ # options for including or excluding some repeat categories
+ -nolow 	do not mask low complexity
+ -noint 	do not mask interspersed repeats - mask only simple/low complexity
+ -norna 	do not mask RNA genes
+ -alu 		mask only Alu (relevant for primates)
+ -div 		mask repeats below a certain divergence threshold (e.g., useful when you want to know only about young repeats)
+
+# option for using a specific repeat library!!
+-lib 	specify the path to your custom library *RECOMMENDED*
+
+# option to specify a species name
+-species 	RepeatMasker will use consensus sequences specific to that species (e.g., if specify mouse, it will use sequences specific to mouse, sequences present in all Rodents and in all Mammals). -lib and -species are mutually exclusive *RECOMMENDED*
+
+# option for dealing with contamination (bacterial insertion sequences)
+-is_only
+-is_clip
+-no_is
+
+# options for masking
+-gccalc 	calculates the GC content of the sequence to better distinguish repeats from low complexity sequences *RECOMMENDED*
+
+# options for the output
+-dir 		you can specify an output folder *RECOMMENDED*
+-a 		write alignment file (.align) *RECOMMENDED*
+-xsmall		returns a fasta file with soft-masked repeats *RECOMMENDED*
+-x 		returns a fasta file with hard-masked repeats
+-html 		returns the RMSK output as an additional html file
+-gff 		returns the RMSK output as an additional GFF file *IMPORTANT*
+-e(xcln) 	outputs a table file with a summary of the repeat proportions *RECOMMENDED*
+</code></pre>
+<p>Which options would you use?</p>
+<p>This is the command we're going to use.</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> be sure you're using the right GROUP value</span>
+GROUP=g01
+RepeatMasker -pa 1 -a -xsmall -gccalc -excln -s -dir ./ -lib HD.lib RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib</pre></div>
+<hr>
+<h1>
+<a id="user-content-part-c" class="anchor" href="#part-c" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part C</h1>
+<h2>
+<a id="user-content-practical-c1-inspect-and-use-repeatmasker-output" class="anchor" href="#practical-c1-inspect-and-use-repeatmasker-output" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practical C.1: Inspect and use RepeatMasker output</h2>
+<p>In the output directory indicated above (<code>-dir</code>) you will find several output files:</p>
+<h4>
+<a id="user-content-out" class="anchor" href="#out" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.out</h4>
+<p>the main and most important output file of RepeatMasker. This files contains 15 columns describing in detail each repeat found in the genome.</p>
+<p>Which is the column containing the divergence from consensus?
+What do the columns 8 and 14 mean?</p>
+<h4>
+<a id="user-content-align" class="anchor" href="#align" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.align</h4>
+<p>the <code>.align</code> file contains all the alignments found by RepeatMasker and give some supplementary information about the alignment statistics. This file is important to keep for some downstream analysis below.</p>
+<h4>
+<a id="user-content-tbl" class="anchor" href="#tbl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.tbl</h4>
+<p>this is a summary table (the one produced thanks to the option <code>-excln</code>) containg useful information about the portion of sequence masked and proportion of repeats.</p>
+<h4>
+<a id="user-content-masked" class="anchor" href="#masked" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.masked</h4>
+<p>this is the soft-masked version of the input fasta file</p>
+<h4>
+<a id="user-content-catgz" class="anchor" href="#catgz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.cat.gz</h4>
+<p>this is the version of the <code>.align</code> file before the <code>ProcessRepeats</code> step of RepeatMasker</p>
+<p>Now we explore some useful tools and commands to investigate and manipulate the RepeatMasker output files. Many of the scripts listed below are found in the <code>util</code> folder within the installation folder of RepeatMasker itself.</p>
+<h3>
+<a id="user-content-re-calculate-the-divergence-adjusted-for-gc-content" class="anchor" href="#re-calculate-the-divergence-adjusted-for-gc-content" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Re-calculate the divergence adjusted for GC content</h3>
+<p>The presence of methylated cytosines at CpG sites (in animals) often causes the hypermutability of Cs into Ts (leading to TpG and CpA sites) and this mechanism can cause an overestimation of the percentage of divergence from the consensus sequence. Therefore, there is a Perl scripts in the utils of RepeatMasker that can re-calculate the divergence percentages taking into account the presence of CpG sites starting from the <code>.align</code> file.</p>
+<p><strong>Note</strong> the CpG re-calculation given here is heavily biased for animals and other organisms in which the context CpG is methylated so if you are using your own data and you know CpGs are not methylated you can skip this step. Also it should be possible to modify the script to consider other methylation contexts.</p>
+<p>Here</p>
+<div class="highlight highlight-source-shell"><pre>CODE=/home/ubuntu/miniconda3/envs/RepeatMasker/share/RepeatMasker/util/
+
+<span class="pl-c1">cd</span> <span class="pl-k">~</span>/TEcourse/Intermediate/RMSK/
+mkdir RV
+<span class="pl-c1">cd</span> RV
+
+cp <span class="pl-k">~</span>/Share/Output/RMSK/RV_rm1.0/RV.fasta.out <span class="pl-c1">.</span>
+cp <span class="pl-k">~</span>/Share/Output/RMSK/RV_rm1.0/RV.fasta.align <span class="pl-c1">.</span>
+
+<span class="pl-c"><span class="pl-c">#</span> Calculate the divergence with Kimura 2-parameter distances (excluding CpG sites)</span>
+perl <span class="pl-smi">$CODE</span>/calcDivergenceFromAlign.pl -s RV.fasta.align.divsum -a RV.fasta.align_with_div RV.fasta.align</pre></div>
+<p>What is <code>-s</code>? What is <code>-a</code>?</p>
+<p>Some more info about the CpG sites directly from the help of the <code>calcDivergenceFromAlign.pl</code> script:</p>
+<p>Treat "CG" dinucleotide sites in the consensus sequence as follows:
+Two transition mutations are counted as a single transition, one transition is counted as 1/10 of a standard transition, and transversions are counted normally (as the would outside of a CpG site).  This modification to the Kimura 2 parameter model accounts for the extremely high rate of mutations in at a CpG locus.</p>
+<p>Look at either of the new files: Which is the column containing the new divergence estimate? Is it in the same format as the previous divergence? Did the divergence change? If it changed, did it increase or decrease?</p>
+<h3>
+<a id="user-content-make-a-repeat-landscape-plot" class="anchor" href="#make-a-repeat-landscape-plot" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Make a repeat landscape plot</h3>
+<p>To make a nice and fast landscape plot we can easily use another RepeatMasker script that will take the output from the previous step as input.</p>
+<div class="highlight highlight-source-shell"><pre>CODE=/home/ubuntu/miniconda3/envs/RepeatMasker/share/RepeatMasker/util/
+
+<span class="pl-c"><span class="pl-c">#</span> Make repeat landscape from CpG-corrected RepeatMasker .align file and average divergence file:</span>
+perl <span class="pl-smi">$CODE</span>/createRepeatLandscape.pl -div RV.fasta.align.divsum -g 55423593 <span class="pl-k">&gt;</span> RV.fasta.align.divsum.html</pre></div>
+<p>What is <code>-g</code>?
+The number given in the command line is specific for the RV genome, when running the command on another genome you must change that parameter according to the genome size! You can find the size of the fasta analysed in the <code>.tbl</code> file</p>
+<p>Download locally the <code>.html</code> file and give it a look! Isn't it pretty? :D</p>
+<h3>
+<a id="user-content-convert-an-align-file-into-out-optional" class="anchor" href="#convert-an-align-file-into-out-optional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Convert an align file into .out (optional)</h3>
+<p>From the <code>calcDivergenceFromAlign.pl</code>, we obtained a new <code>.align</code> file with the CpG-corrected divergence but it would be nice to have it in the form of the <code>.out</code> file again so here's a one-liner awk command to do so:</p>
+<div class="highlight highlight-source-shell"><pre>awk <span class="pl-s"><span class="pl-pds">'</span>{if(index($12, "(") != 0){print $1,$2,$3,$4,$5,$6,$7,$7-($6-1),$8,"+",$9,$10,$11,$12,$13,$14}else if($9 ~ /C/){print $1,$2,$3,$4,$5,$6,$7,$7-($6-1),$8,$9,$10,$11,$12,$13,$14,$15}}<span class="pl-pds">'</span></span> OFS=<span class="pl-s"><span class="pl-pds">"</span>\t<span class="pl-pds">"</span></span> RV.fasta.align_with_div <span class="pl-k">|</span> sed <span class="pl-s"><span class="pl-pds">'</span>s/#/\t/<span class="pl-pds">'</span></span> <span class="pl-k">&gt;</span> RV.fasta.align_with_div.noCpG.size.out</pre></div>
+<h3>
+<a id="user-content-convert-the-out-file-into-a-bed-file-optional" class="anchor" href="#convert-the-out-file-into-a-bed-file-optional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Convert the .out file into a BED file (optional)</h3>
+<p>Sometimes it's very handy to have a BED file to use with BEDTools (e.g., intersect repeat annotation with other types of annotations; Quilan and Hall 2010).
+We show you three ways to convert the <code>.out</code> into BED</p>
+<ol>
+<li>Make 0-formatted bed file from 1-formatted RepeatMasker .out file (sequence, masking start, masking end) with awk:</li>
+</ol>
+<div class="highlight highlight-source-shell"><pre>awk <span class="pl-s"><span class="pl-pds">'</span>(NR&gt;3){$6=$6-1; print $5,$6,$7}<span class="pl-pds">'</span></span> OFS=<span class="pl-s"><span class="pl-pds">"</span>\t<span class="pl-pds">"</span></span> RV.fasta.out <span class="pl-k">&gt;</span> RV.fasta.out.bed</pre></div>
+<ol start="2">
+<li>Make bed6 file from RepeatMasker .out file (bed file with TE information):</li>
+</ol>
+<div class="highlight highlight-source-shell"><pre>awk <span class="pl-s"><span class="pl-pds">'</span>(NR&gt;3){$6=$6-1; print $5,$6,$7,$10,$11,$9}<span class="pl-pds">'</span></span> OFS=<span class="pl-s"><span class="pl-pds">"</span>\t<span class="pl-pds">"</span></span> RV.fasta.out <span class="pl-k">&gt;</span> RV.fasta.out.bed6</pre></div>
+<ol start="3">
+<li>Make a BED file using a RepeatMasker util script</li>
+</ol>
+<div class="highlight highlight-source-shell"><pre><span class="pl-smi">$CODE</span>/RM2Bed.py RV.fasta.out</pre></div>
+<p>This script has several options, give them a look!
+It also works starting from a <code>.align</code> file as input!</p>
+<h3>
+<a id="user-content-convert-the-out-file-into-a-gff-file-optional" class="anchor" href="#convert-the-out-file-into-a-gff-file-optional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Convert the .out file into a GFF file (optional)</h3>
+<p>GFF files are as useful as BED files therefore let's see how to convert the .out file into a GFF using a RepeatMasker util script</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-smi">$CODE</span>/rmOutToGFF3.pl  RV.fasta.out <span class="pl-k">&gt;</span> RV.fasta.out.gff</pre></div>
+<h3>
+<a id="user-content-get-sequences-from-the-out-file-optional" class="anchor" href="#get-sequences-from-the-out-file-optional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get sequences from the .out file (optional)</h3>
+<p>The script <code>rmOut2Fasta.pl</code> is an easy and fast way to get a fasta file from the .out file</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-smi">$CODE</span>/rmOut2Fasta.pl -fasta RV.fasta -out RV.fasta.out</pre></div>
+<p>It can also be done using a BED file (+ the original fasta file) and the function bedtools getfasta from BEDTools.</p>
+<h3>
+<a id="user-content-make-a-hard-masked-nnn-version-of-the-soft-masked-lowercase-masked-file-optional" class="anchor" href="#make-a-hard-masked-nnn-version-of-the-soft-masked-lowercase-masked-file-optional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Make a hard-masked (NNN) version of the soft-masked (lowercase) .masked file (optional)</h3>
+<p>Sometimes it is useful to have a hard masked version of the genome and we can do this with a simple perl command:</p>
+<div class="highlight highlight-source-shell"><pre>perl -e <span class="pl-s"><span class="pl-pds">'</span>while(&lt;&gt;) { if ($_ =~ /^&gt;.*/) { print $_; } else { $_ =~ tr/acgt/N/; print $_;}}<span class="pl-pds">'</span></span> <span class="pl-k">&lt;</span> RV.fasta.masked <span class="pl-k">&gt;</span>RV.fasta.masked.hard</pre></div>
+<p>You can also tune the soft and hard masking of a genome by using a custom BED track of repeats and <code>bedtools maskfasta</code></p>
+<h3>
+<a id="user-content-programs-in-repeatmasker-for-downstream-analyses" class="anchor" href="#programs-in-repeatmasker-for-downstream-analyses" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Programs in RepeatMasker for downstream analyses:</h3>
+<p>There are many other scripts included in the RepeatMasker installation that are useful for downstream analysis. Feel free to explore them!</p>
+<p><strong>Scripts in the main RepeatMasker installation folder:</strong></p>
+<ul>
+<li>DateRepeats</li>
+<li>DupMasker</li>
+<li>ProcessRepeats</li>
+<li>RepeatMasker</li>
+<li>RepeatProteinMask</li>
+</ul>
+<p><strong>Scripts in RepeatMasker/util folder:</strong></p>
+<ul>
+<li>buildRMLibFromEMBL.pl</li>
+<li>buildSummary.pl</li>
+<li>calcDivergenceFromAlign.pl</li>
+<li>createRepeatLandscape.pl</li>
+<li>dupliconToSVG.pl</li>
+<li>getRepeatMaskerBatch.pl</li>
+<li>queryRepeatDatabase.pl</li>
+<li>queryTaxonomyDatabase.pl</li>
+<li>RM2Bed.py</li>
+<li>rmOut2Fasta.pl</li>
+<li>rmOutToGFF3.pl</li>
+<li>rmToUCSCTables.pl</li>
+<li>trfMask</li>
+<li>wublastToCrossmatch.pl</li>
+</ul>
+<hr>
+<h2>
+<a id="user-content-references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h2>
+<p>Boman, J. et al. The genome of blue-capped cordon-bleu uncovers hidden diversity of LTR retrotransposons in zebra finch. Genes 10, 301 (2019).</p>
+<p>Flynn, J. M. et al. RepeatModeler2 for automated genomic discovery of transposable element families. Proceedings of the National Academy of Sciences 117, 9451-9457 (2020).</p>
+<p>Quinlan, A. R. &amp; Hall, I. M. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics 26, 841-842 (2010).</p>
+<p>Smit, A., Hubley, R. &amp; Green, P. RepeatMasker Open-3.3.0. <a href="http://www.repeatmasker.org" rel="nofollow">http://www.repeatmasker.org</a>.  (1996-2010).</p>
+<p>Yoshida, Y. et al. Comparative genomics of the tardigrades Hypsibius dujardini and Ramazzottius varieornatus. PLoS Biol. 15, e2002266 (2017).</p>
+</article></body></html>

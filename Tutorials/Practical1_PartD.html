@@ -1,0 +1,1109 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    color:#333;
+    background:#fff;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+.markdown-body .octicon-link:before {
+  font: normal normal normal 16px/1 octicons-link;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  content: '\f05c';
+  vertical-align: middle;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+</style><title>Practical1_PartD</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-practical-1-de-novo-repeat-prediction-and-annotation-with-repeatmodeler2-and-repeatmasker" class="anchor" href="#practical-1-de-novo-repeat-prediction-and-annotation-with-repeatmodeler2-and-repeatmasker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practical 1: De-novo repeat prediction and annotation with RepeatModeler2 and RepeatMasker</h1>
+<p><em>Valentina Peona</em></p>
+<p><em><a href="mailto:valentina.peona@ebc.uu.se">valentina.peona@ebc.uu.se</a></em></p>
+<h2>
+<a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
+<p>In this practical you're going to reclassifly (if possible) the RV consensus sequences on the basis of the homology with HD repeats using the RepeatMasker output you produced yesterday at the end of Part B. This reclassification is part of the "TE field work" in which we try to assign a sample to its right taxonomical family (similar to genus) and subfamily (similar to species). The search for the right and complete taxonomy will actually end when all the sequences are curated, this is just a first step.</p>
+<p>Usually, to define that two consensus sequences belong to the same family, the 80-80-80 rule is followed: "the “80-80-80” rule (Wicker et al. 2007) has been proposed as a means of identifying copies from the same TE family: two TE copies may be considered to belong to the same family if they are aligned, with 80% identity, over at least 80 bp and 80% of their respective lengths" (Flutre et al. 2011).</p>
+<p>In addition to that, we can try to identify repeats that belong to the same subfamily with more stringent similarity parameters following the “95-80-98” rule. "This implies that a consensus sequence is <em>removed</em> if it is included within another consensus sequence over 98% of its length, with an identity level exceeding 95%" (Flutre et al. 2011).</p>
+<hr>
+<h1>
+<a id="user-content-part-d" class="anchor" href="#part-d" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part D</h1>
+<p>In this tutorial you're going to inspect the RepeatMasker output files that you produced yesterday at the end of Practical 1 Part B. You're going to check if any RV repeats is similar to HD repeats following the “95-80-98” (same subfamily; Flutre et al. 2011) or the “80-80-80” (same family; Wicker et al. 2007) rule.</p>
+<p>Go to the folder in which you have the RepeatMasker output file for RV repeats vs HD repeats and inspect your file.</p>
+<p>Initially inspect the file manually just to get a feeling of how similar RV repeats are to HD repeats then you can test the suggested code below.</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c1">cd</span> <span class="pl-k">~</span>/TEcourse/Intermediate/RMSK/
+
+<span class="pl-c"><span class="pl-c">#</span> change the group name!!</span>
+GROUP=g01
+less RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib.out</pre></div>
+<ul>
+<li>How long are the homologous regions? Are they longer than 80 bps?</li>
+<li>What's the sequence similarity? (column 2)</li>
+<li>How many are similar to HD repeats?</li>
+</ul>
+<p>It is essential for this part of the course and analysis that you record the results of Part D in the Excel template we made for you. Download Excel template from Dropbox: <a href="https://www.dropbox.com/s/8blfl16ztrylhc1/Classification_and_curation_factsheet_template.xlsx?dl=0" rel="nofollow">https://www.dropbox.com/s/8blfl16ztrylhc1/Classification_and_curation_factsheet_template.xlsx?dl=0</a></p>
+<p><strong>TO DO!!!</strong>: Paste all the names of your RV sequences into this template under the column O (rm1.0_name) and record similarity to the HD repeats in column Q. If there is no similarity to the HD repeats, also record this in column Q.</p>
+<p>Example of how to print sequences names ready to paste into the Excel file:</p>
+<div class="highlight highlight-source-shell"><pre>grep <span class="pl-s"><span class="pl-pds">'</span>&gt;<span class="pl-pds">'</span></span> RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib <span class="pl-k">|</span> cut -c2- <span class="pl-k">&gt;</span> list_sequences
+cat list_sequences</pre></div>
+<p>For the cases in which the homology requirements for family and/or subfamily are fullfilled, record the suggested reclassification in column R.</p>
+<p>Put the resulting Excel file into the Dropbox folder: <a href="https://www.dropbox.com/sh/8d8008y0tudmtd9/AACzJd2kgJO335DYFDsdMR-ja?dl=0" rel="nofollow">https://www.dropbox.com/sh/8d8008y0tudmtd9/AACzJd2kgJO335DYFDsdMR-ja?dl=0</a> <strong>under your group subfolder</strong></p>
+<p><strong>We're going to keep working on these files in the next days during the manual curation process</strong></p>
+<p><strong>Optional</strong>: Paste all sequences in CENSOR (<a href="https://www.girinst.org/censor/index.php" rel="nofollow">https://www.girinst.org/censor/index.php</a>) and see if there is similarity between RV consensus sequences and known repeats deposited in Repbase?</p>
+<p>Before pasting the sequences please replace the "#" in the headers with another symbol because CENSOR is not happy about the "#" character. You can do it like this:</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> replace # with double underscores</span>
+sed <span class="pl-s"><span class="pl-pds">'</span>s/#/__/<span class="pl-pds">'</span></span> RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib <span class="pl-k">&gt;</span> RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib.nohash</pre></div>
+<p>It is always better to keep all the file versions so do not overwrite your files.</p>
+<p><strong>Optional code</strong></p>
+<p>Here we propose a couple of awk commands to test the 80-80-80 rule.</p>
+<p>The first awk command converts the .out file into a tab-separated file so it's easier to read and parse. The second command filters for the percentage of query covered by the alignment with HD repeats (higher than 80%). The last command filters for identity (higher than 80%)</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c1">cd</span> <span class="pl-k">~</span>/TEcourse/Intermediate/RMSK/
+
+<span class="pl-c"><span class="pl-c">#</span> change the group name!!</span>
+GROUP=g01
+
+<span class="pl-c"><span class="pl-c">#</span> convert .out file into a tab-separated file maintaining all the columns</span>
+awk <span class="pl-s"><span class="pl-pds">'</span>NR &gt;3 {print $0}<span class="pl-pds">'</span></span> RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib.out <span class="pl-k">|</span> tr -s <span class="pl-s"><span class="pl-pds">'</span> <span class="pl-pds">'</span></span> <span class="pl-k">|</span> sed <span class="pl-s"><span class="pl-pds">'</span>s/^ //<span class="pl-pds">'</span></span> <span class="pl-k">|</span> sed <span class="pl-s"><span class="pl-pds">'</span>s/[*]//<span class="pl-pds">'</span></span> <span class="pl-k">|</span> tr -s <span class="pl-s"><span class="pl-pds">'</span> <span class="pl-pds">'</span></span> <span class="pl-s"><span class="pl-pds">'</span>\t<span class="pl-pds">'</span></span> <span class="pl-k">&gt;</span> RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib.tsv
+
+<span class="pl-c"><span class="pl-c">#</span> Filter for percentage of the query covered and with a cutoff of 80 bps</span>
+cat RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib.tsv <span class="pl-k">|</span> sed <span class="pl-s"><span class="pl-pds">'</span>s/[()]//g<span class="pl-pds">'</span></span> <span class="pl-k">|</span> awk <span class="pl-s"><span class="pl-pds">'</span>{print $0, $7-$6+1, $7+$8, ($7-$6+1)/($7+$8)}<span class="pl-pds">'</span></span> <span class="pl-k">|</span> awk <span class="pl-s"><span class="pl-pds">'</span>$18 &gt;= 0.8 {print $0}<span class="pl-pds">'</span></span> <span class="pl-k">&gt;</span> RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib.tsv.len80
+
+<span class="pl-c"><span class="pl-c">#</span>Filter for identity above 80% (i.e., Kimura 2-parameter genetic distance of 0.2 and lower)</span>
+<span class="pl-c"><span class="pl-c">#</span> RepeatMasker default output file but consider to use the CpG corrected file and change the column (after the $ symbol) for the divergence accordingly</span>
+awk <span class="pl-s"><span class="pl-pds">'</span>$2 &lt;= 20<span class="pl-pds">'</span></span> RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib.tsv.len80 <span class="pl-k">&gt;</span> RV_rm1.0_<span class="pl-smi">${GROUP}</span>.lib.tsv.len80.k2p0.2</pre></div>
+<p>Don't worry if you don't find any homology at all, it's biology! :P Keep reading and you will find a way to train your re-classification skills on other files.</p>
+<p><strong>Note</strong>: The commands above are for didactic purpose so all the steps are clearly stated. If you're fluent in awk/bash etc you're free to compact them.</p>
+<p>Inspect the output files, is there any repeat that fulfils the "80-80-80" rule?</p>
+<p><strong>Optional</strong>: tweak the commands above to look for repeats fulfilling the “95-80-98” rule</p>
+<p>As you may have noticed, the filtering commands depend on the masking direction (which library is the query and which one is the reference) and the format of the file (.out file vs BED, GFF etc) so please pay attention to the number of the columns when analysing other files. When running the filters also pay attention to which library is the curated one or to which consensus sequences are the longest etc (see slides of today's lecture).</p>
+<p>This approach works quite well when we have a pair of libraries to compare and merge but how would you prioritise the library merging when dealing with multiple libraries? Which consensus sequences to keep/remove? How to reclassify them?</p>
+<p>If you want to test this filtering/reclassification process on a raw repeat library from a species that has a closely related species with a curated repeat library (e.g., bird) you can give a look at the RepeatMasker output from
+raw Anna's hummingbird (<em>Calypte anna</em>) RMDL library vs the curated repeat library of several other birds.</p>
+<p>Find the .out file for hummingbird vs paradise crow in: <code>Share/Output/RMSK/hummingbird/</code>
+No need to record anything! It's just for training :)</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c1">cd</span> <span class="pl-k">~</span>/TEcourse/Intermediate/RMSK/
+
+cp -r <span class="pl-k">~</span>/Share/Output/RMSK/hummingbird/ <span class="pl-c1">.</span>
+
+<span class="pl-c1">cd</span> hummingbird
+
+<span class="pl-c"><span class="pl-c">#</span> run the awk commands and look at the output</span></pre></div>
+<hr>
+<h2>
+<a id="user-content-optional-task-1-create-and-explore-landscape-plots-from-various-libraries" class="anchor" href="#optional-task-1-create-and-explore-landscape-plots-from-various-libraries" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Optional task 1: create and explore landscape plots from various libraries</h2>
+<p>Collect the RepeatMasker output files produced for you from the <code>Share/Output/RMSK</code> folder.</p>
+<p>In <code>Share/Output/RMSK</code> folder you can find:</p>
+<ol>
+<li>
+<code>RV_rm1.0</code>: RV genome masked with the RV raw consensus sequences (already analysed yesterda)</li>
+<li>
+<code>Arthropoda</code>: RV genome masked with Repbase Arthropoda repeat library (collection of repeats known to be found in Arthropoda species)</li>
+<li>
+<code>HDlib</code>: RV genome masked with the HD curated repeat library</li>
+</ol>
+<p>Copy the files into you working directory and run <code>calcDivergenceFromAlign.pl</code> and <code>createRepeatLandscape.pl</code> as we did yesterday then compare the landscapes in the different <code>.html</code> files.</p>
+<p>Example for <code>HDlib</code>:</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c1">cd</span> <span class="pl-k">~</span>/TEcourse/Intermediate/RMSK/
+
+cp -r <span class="pl-k">~</span>/Share/Output/RMSK/HDlib/ <span class="pl-c1">.</span>
+
+<span class="pl-c1">cd</span> HDlib
+
+CODE=/home/ubuntu/miniconda3/envs/RepeatMasker/share/RepeatMasker/util/
+<span class="pl-c"><span class="pl-c">#</span> Calculate the divergence with Kimura 2-parameter distances (excluding CpG sites)</span>
+perl <span class="pl-smi">$CODE</span>/calcDivergenceFromAlign.pl -s RV.fasta.align.divsum -a RV.fasta.align_with_div RV.fasta.align
+
+<span class="pl-c"><span class="pl-c">#</span> Make repeat landscape from CpG-corrected RepeatMasker .align file and average divergence file:</span>
+perl <span class="pl-smi">$CODE</span>/createRepeatLandscape.pl -div RV.fasta.align.divsum -g 55423593 <span class="pl-k">&gt;</span> RV.fasta.align.divsum.html</pre></div>
+<p><strong>Note</strong>: When running the commands for the different files, pay attention to the file names!</p>
+<p>What differences can you find? Are there some categories that disappear/appear only in one landscape? What about the proportion of repeats at low divergence? What can you conclude?</p>
+<hr>
+<h2>
+<a id="user-content-optional-task-2-run-repeatmasker-on-raw-reads" class="anchor" href="#optional-task-2-run-repeatmasker-on-raw-reads" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Optional task 2: run RepeatMasker on raw reads</h2>
+<p>You can run RepeatMasker directly on raw reads. It is interesting to compare the results on raw reads with the results obtained with the assembly.</p>
+<p>In <code>Share/Output/Data</code> you can find two files of sampled raw reads of RV, one with a million reads and the other with half a million. Run RepeatMasker on them and create the landscape plots.</p>
+<p>If for time reasons you don't manage to fully run RepeatMasker (it may take too long), you can find the .out files in
+<code>Share/Output/RMSK</code> subfolders <code>reads1M</code> and <code>reads500K</code>.</p>
+<p>Example for reads1M:</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c1">cd</span> <span class="pl-k">~</span>/TEcourse/Intermediate/RMSK/
+
+mkdir -p reads1M <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> reads1M
+
+cp <span class="pl-k">~</span>/Share/Data/reads1M/RV_1M_sampled.fasta <span class="pl-c1">.</span>
+
+conda activate RepeatMasker
+
+ln -s <span class="pl-k">~</span>/TEcourse/Intermediate/RMDL/RV_rm1.0.lib <span class="pl-c1">.</span>
+
+RepeatMasker -pa 1 -a -xsmall -gccalc -excln -s -dir ./ -lib RV_rm1.0.lib RV_1M_sampled.fasta</pre></div>
+<p>Create the landscape plot(s) and compare with the plot created using the assembly (follow the code of yesterday or the code above in Optional task 1). Which value should <code>-g</code> have for the calcDivergenceFromAlign.pl script? How do the landscapes differ?</p>
+<p>Note that the reads have been directly sampled from the library without filtering steps. Which filtering steps would have you done? How would filtering affect the landscape plot? Would filtering steps affect the landscape at all?</p>
+<hr>
+<h1>
+<a id="user-content-references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h1>
+<p>Flutre T, Duprat E, Feuillet C, Quesneville H (2011) Considering Transposable Element Diversification in De Novo Annotation Approaches. PLOS ONE 6(1): e16526. <a href="https://doi.org/10.1371/journal.pone.0016526" rel="nofollow">https://doi.org/10.1371/journal.pone.0016526</a></p>
+<p>Wicker, T., Sabot, F., Hua-Van, A., Bennetzen, J. L., Capy, P., Chalhoub, B., ... &amp; Schulman, A. H. (2007). A unified classification system for eukaryotic transposable elements. Nature Reviews Genetics, 8(12), 973-982.</p>
+</article></body></html>
