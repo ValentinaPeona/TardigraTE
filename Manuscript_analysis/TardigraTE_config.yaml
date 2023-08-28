@@ -1,0 +1,11 @@
+# Configuration file for TardigraTE_1,3.smk
+# ==================================================
+# Valentina Peona
+# Alexander Suh Lab, Uppsala Universitet, Sweden
+# 2022/12/08
+# +++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reference: ["Data/HD.fasta", "Data/RV.fasta"]
+TElibraries_path: "Data/Libraries"
+TElibraries: ["Repbase.lib", "Uncurated.lib", "Curated.lib"]
+LibPrefix : ["Repbase", "Uncurated", "Curated"]
